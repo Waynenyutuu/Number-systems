@@ -1,0 +1,117 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: gray;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the entire app */
+.container {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Converter form styling */
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #555;
+    text-align: left;
+}
+
+/* Inputs and Selects */
+input, select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+/* Input focus effect */
+input:focus, select:focus {
+    border-color: #007BFF;
+}
+
+/* Button styles */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Result display styling */
+.result {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #28a745;
+    background-color: #e8f5e9;
+    padding: 15px;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input, select, button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
